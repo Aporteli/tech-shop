@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Slider from "rc-slider";
 import "rc-slider/assets/index.css";
-import styles from "./PriceFilter.module.css";
+import styles from "./priceFilter.module.css";
 
 export default function PriceFilter({ min = 0, max = 7169, onPriceChange }) {
   const [range, setRange] = useState([min, max]);
