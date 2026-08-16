@@ -1,0 +1,142 @@
+.container {
+  min-height: 100vh;
+}
+
+.main {
+  min-height: 100vh;
+  background: linear-gradient(to top, #c9bde4, #fff 85vh);
+  background-attachment: fixed;
+}
+
+.homeContent {
+  width: 100%;
+}
+
+.subheader {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subheaderLinks {
+  position: inherit;
+  display: flex;
+  gap: 20px;
+  z-index: 10;
+}
+
+.subheaderLink {
+  position: inherit;
+  font-size: 14px;
+  color: #1e293b;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.2s ease;}
+
+.subheaderLink:hover {
+  color: #6366f1;
+  text-decoration: underline;
+}
+
+.subheaderNumber {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.movingDivider {
+  width: 100%;
+  height: 1.5px;
+  border: none;
+  border-radius: 2px; /* კუთხეების მცირე მომრგვალება უფრო რბილი ვიზუალისთვის */
+
+  background: linear-gradient(90deg, #7f56d9 0%, #3acbe8 50%, #7f56d9 100%);
+  background-size: 200% 100%;
+
+  /* 8 წამიანი სრული ციკლი, რომელიც უსასრულოდ მეორდება */
+  animation: moveAndFade 3s ease-in-out infinite;
+}
+
+@keyframes moveAndFade {
+  /* =======================================================
+     ფაზა 1: მოძრაობა (0წ - 2წ) - ხაზი ჩანს და ფერები მიედინება
+     ======================================================= */
+  0% {
+    opacity: 1;
+    background-position: 100% 0%;
+  }
+  10% {
+    opacity: 1;
+    background-position: 0% 0%;
+  }
+
+  /* =======================================================
+     ფაზა 2: გაქრობა (2წ - 4წ) - ხაზი რბილად ქრება
+     ======================================================= */
+  50% {
+    opacity: 0;
+    background-position: 0% 0%; /* პოზიცია უცვლელია გაქრობისას */
+  }
+
+  /* =======================================================
+     ფაზა 3: პაუზა (4წ - 6წ) - ხაზი სრულად გამქრალია.
+     ამ დროს ფარულად ვაბრუნებთ ფონის პოზიციას საწყის წერტილზე (100%-ზე).
+     ======================================================= */
+  80% {
+    opacity: 0;
+    background-position: 100% 0%;
+  }
+
+  /* =======================================================
+     ფაზა 4: გამოჩენა (6წ - 8წ) - ხაზი რბილად ბრუნდება ეკრანზე
+     ======================================================= */
+  100% {
+    opacity: 1;
+    background-position: 100% 0%;
+  }
+}
+
+/*----------------------------------------------------------------------------------------------
+Mobile Responsive - Under 340px
+------------------------------------------------------------------------------------------------
+*/
+
+@media (max-width: 340px) {
+  .main {
+    background: linear-gradient(to top, #c9bde4, #fff 90vh);
+    padding-top: 10px;
+  }
+
+  .subheader {
+    padding: 8px;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+
+  .subheaderNumber {
+    font-size: 10px;
+  }
+
+  .subheaderLinks {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .subheaderLink {
+    font-size: 11px;
+  }
+
+  .movingDivider {
+    height: 1px;
+  }
+}
+
+@media (max-width: 317px) {
+  .main {
+    background: linear-gradient(to top, #c9bde4, #fff 90vh);
+    padding-top: 30px;
+  }
+}

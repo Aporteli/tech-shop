@@ -1,0 +1,332 @@
+.container {
+  --sc-primary: #7f56d9;
+  --sc-primary-dark: #6d48c7;
+  --sc-primary-darker: #5b3ab0;
+  --sc-primary-soft: rgba(127, 86, 217, 0.08);
+  --sc-primary-border: rgba(127, 86, 217, 0.22);
+  --sc-ink: #111827;
+  --sc-muted: #6b7280;
+  --sc-border: #e8e4f2;
+  --sc-surface-2: #faf9fe;
+  --sc-shadow-sm: 0 2px 10px rgba(76, 45, 143, 0.05);
+  --sc-shadow-md: 0 10px 30px rgba(76, 45, 143, 0.1);
+
+  max-width: var(--page-max-width, 1250px);
+  margin: 0 auto;
+  padding: 24px var(--page-pad-x, 20px) 80px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px 16px 64px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px 12px 56px;
+  }
+}
+
+/* ── Page header ── */
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 4px 0 22px;
+}
+
+.subCategoryHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.titleGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.subCategoryTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: clamp(21px, 3vw, 30px);
+  font-weight: 800;
+  color: var(--sc-ink);
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.subCategoryTitle::before {
+  content: '';
+  width: 4px;
+  height: 1em;
+  border-radius: 2px;
+  background: linear-gradient(180deg, var(--sc-primary), var(--sc-primary-darker));
+}
+
+.resultCount {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--sc-primary);
+  background: var(--sc-primary-soft);
+  border: 1px solid var(--sc-primary-border);
+  padding: 6px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* ── Layout ── */
+.gridContainer {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .gridContainer {
+    grid-template-columns: 230px 1fr;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 712px) {
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* ── Filter sidebar ── */
+.filterGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-self: start;
+  position: sticky;
+  top: calc(var(--header-offset, 80px) + 8px);
+  max-height: calc(100dvh - var(--header-offset, 80px) - 16px);
+  min-width: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #d9d2ee transparent;
+  padding: 4px 8px 8px 2px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 712px) {
+  .filterGrid {
+    display: none;
+  }
+}
+
+.filterGridHeader {
+  display: none;
+}
+
+/* PriceFilter renders its own card, so this wrapper stays transparent */
+.priceFilterContainer {
+  margin: 0;
+}
+
+.attributesFilterContainer {
+  background: #fff;
+  border-radius: 16px;
+  border: 1px solid var(--sc-border);
+  box-shadow: var(--sc-shadow-sm);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  margin: 0;
+}
+
+.attributesFilterContainer:hover {
+  border-color: var(--sc-primary-border);
+  box-shadow: var(--sc-shadow-md);
+}
+
+.filterGridPrice {
+  width: 100%;
+}
+
+.filterGridDropDown {
+  width: 100%;
+  padding: 8px;
+}
+
+/* ── Products area ── */
+.productsGrid {
+  min-width: 0;
+  min-height: 320px;
+}
+
+.mainDiv {
+  position: relative;
+}
+
+.outerDiv {
+  width: 100%;
+  position: relative;
+}
+
+.sliderDiv {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 18px;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .sliderDiv {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sliderDiv {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}
+
+/* ── Empty state ── */
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 280px;
+  padding: 40px 24px;
+  background: #fff;
+  border: 1px solid var(--sc-border);
+  border-radius: 20px;
+  box-shadow: var(--sc-shadow-sm);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--sc-ink);
+}
+
+.emptyStateHint {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--sc-muted);
+}
+
+/* ── See more ── */
+.seeMoreContainer {
+  display: flex;
+  justify-content: center;
+  margin: 28px auto 0;
+}
+
+.seeMoreBtn {
+  min-width: 260px;
+  padding: 13px 28px;
+  background: linear-gradient(135deg, var(--sc-primary) 0%, var(--sc-primary-dark) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 6px 18px rgba(127, 86, 217, 0.3);
+}
+
+.seeMoreBtn:hover {
+  background: linear-gradient(135deg, var(--sc-primary-dark) 0%, var(--sc-primary-darker) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(127, 86, 217, 0.4);
+}
+
+.seeMoreBtn:active {
+  transform: translateY(0);
+}
+
+.seeMoreBtn:focus-visible {
+  outline: 2px solid var(--sc-primary);
+  outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+  .seeMoreBtn {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* ── Attribute dropdowns (filter sidebar) ── */
+.attributeDropdown {
+  border-bottom: 1px solid var(--sc-border);
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+.attributeDropdown:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.attributeDropdownHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.attributeDropdownHeader:hover {
+  background: var(--sc-primary-soft);
+}
+
+.attributeDropdownTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--sc-ink);
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.attributeDropdownContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.attributeDropdownContentOpen {
+  max-height: none;
+  overflow: visible;
+  padding-left: 12px;
+  padding-top: 8px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seeMoreBtn,
+  .priceFilterContainer,
+  .attributesFilterContainer {
+    transition: none;
+  }
+
+  .seeMoreBtn:hover {
+    transform: none;
+  }
+}

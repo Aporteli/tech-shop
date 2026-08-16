@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-light-purple-1: #f9f7fd;
+  --color-light-purple-2: #f2eefb;
+  --color-light-purple-3: #f3ebf9;
+  --color-light-purple-3-06: #f3ebf999;
+  --color-light-purple-4: #ebe5f8;
+  --color-light-purple-5: #f7f5fc;
+  --color-light-purple-5-05: #f7f5fc80;
+  --color-light-purple-6: #e3d7ff;
+  --color-light-purple-7: #f4efff;
+  --color-purple-1: #7f56d9;
+  --color-purple-1-05: #7f56d90d;
+  --color-purple-1-06: #7f56d999;
+  --color-purple-2: #652d8f;
+  --color-purple-3: #652d8f4d;
+  --color-purple-4: #8d6cd5;
+  --color-purple-5: #6941c6;
+  --color-dark-purple-1: #735ea7;
+  --color-dark-purple-2: #735ea8;
+  --color-dark-purple-3: #6359d2;
+  --color-white: #fff;
+  --color-white-2: #f8f8f8;
+  --color-white-3: #f7f7f7;
+  --color-white-4: #f2f2f2;
+  --color-white-4-08: #f2f2f280;
+  --color-white-5: #eee;
+  --color-white-5-06: #eee9;
+  --color-white-6: #e4e0e1;
+  --color-white-purplish: #f7f4f5;
+  --color-black: #000;
+  --color-black-2: #151515;
+  --color-black-2-5: #1515150d;
+  --color-black-3: #181d27;
+  --color-black-3-01: #181d271a;
+  --color-black-3-05: #181d27;
+  --color-black-3-06: #181d2799;
+  --color-black-3-07: #181d27b2;
+  --color-black-3-08: #181d27cc;
+  --color-black-3-09: #181d27e5;
+  --color-black-4: #151515b3;
+  --color-black-5: #0c111d;
+  --color-black-01: #0000001a;
+  --color-black-06: #0009;
+  --color-black-07: #000000b2;
+  --color-black-08: #000c;
+  --color-black-09: #151515e5;
+  --color-gray-1: #666;
+  --color-gray-2: #515151;
+  --color-gray-3: #959595;
+  --color-gray-4: #878787;
+  --color-gray-5: #667085;
+  --color-gray-5-06: #e5e5e599;
+  --color-gray-6: #b7b7b7;
+  --color-gray-7: #8c8c8c;
+  --color-gray-8: #7a7a7a;
+  --color-gray-8-05: #7a7a7a80;
+  --color-gray-9: #898989;
+  --color-gray-9-03: #8989894d;
+  --color-gray-10: #acacac;
+  --color-gray-10-10: #acacac1a;
+  --color-gray-50: #f9fafb;
+  --color-gray-200: #eaecf0;
+  --color-gray-300: #d0d5dd;
+  --color-gray-600: #475467;
+  --color-gray-900: #101828;
+  --color-light-gray-1: #dcdcdc99;
+  --color-light-gray-2: #f9f9f9;
+  --color-light-gray-3: #f2f2f2;
+  --color-light-gray-3-02: #f2f2f238;
+  --color-light-gray-4: #e5e5e5;
+  --color-border-secondary: #d9d9d9;
+  --color-border-secondary-025: #d9d9d940;
+  --color-light-red: #f69891;
+  --color-light-red-2: #ff6b6b;
+  --color-red: #e94444;
+  --color-red-2: #d7232e;
+  --color-red-3: red;
+  --color-dark-red: #4444440a;
+  --color-dark-blue-1: #344054;
+  --color-dark-blue-2: #292d32;
+  --color-green: #188003;
+  --color-green-2: #369260;
+  --color-light-green: #71d8a0;
+  --color-yellow-1: #d99f00;
+  --page-max-width: 1250px;
+  --page-pad-x: 20px;
+  --page-pad-bottom: 80px;
+  --header-offset: 80px;
+  --section-gap: 48px;
+  --image-radius: 12px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-tap-highlight-color: rgba(127, 86, 217, 0.16);
+}
+
+button,
+a,
+[role='button'],
+input,
+select,
+textarea,
+label,
+summary {
+  touch-action: manipulation;
+}
+
+button,
+a,
+[role='button'] {
+  -webkit-tap-highlight-color: rgba(127, 86, 217, 0.16);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  border-radius: var(--image-radius);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.grecaptcha-badge {
+  visibility: hidden !important;
+}
+
+/* Clears the fixed bottom navigation that replaces the desktop header */
+@media (max-width: 1180px) {
+  :root {
+    --header-offset: 60px;
+  }
+
+  body {
+    padding-bottom: var(--page-pad-bottom);
+  }
+}
+

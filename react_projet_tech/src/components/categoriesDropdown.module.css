@@ -1,0 +1,250 @@
+.categoriesContainer {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1001;
+  /* მოვაშორეთ ზედმეტი დუბლირებული სტილები */
+}
+
+.categoriesDropdown {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #000;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  animation: none;
+  overflow-y: auto;
+
+  /* Firefox Scrollbar Settings */
+  scrollbar-width: thin;
+  scrollbar-color: #7f56d9 transparent;
+}
+
+/* ერთიანი სტილი ყველანაირი კატეგორიის შესაფუთისთვის (Link იქნება თუ Div) */
+.categoryWrapper {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  display: block; /* უზრუნველყოფს, რომ Link მოიქცეს როგორც ბლოკი */
+}
+
+.category {
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 16px 12px;
+  min-height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  gap: 12px;
+}
+
+/* ჰოვერისა და აქტიური (არჩეული) კატეგორიის სტილი */
+.category:hover,
+.activeCategory {
+  background-color: var(
+    --color-light-purple-2,
+    #f4ebff
+  ); /* დაემატა fallback ფერი */
+}
+
+.categoryTitle {
+  flex: 1;
+  text-align: left;
+  line-height: 1.4;
+  font-size: 15px;
+  margin: 0;
+  color: #1f2937;
+}
+
+.categoryLink {
+  text-decoration: none;
+  color: black;
+}
+
+.categoryLink:active {
+  color: #7f56d9;
+}
+
+.categoryIcon {
+  font-size: 24px;
+  color: #7f56d9;
+  flex-shrink: 0;
+}
+
+/* სუბკატეგორიების კონტეინერი */
+.sideContainer {
+  position: absolute;
+  top: 0px;
+  left: 250px;
+  width: 630px;
+  max-width: calc(100vw - 250px);
+  height: 100%;
+  background-color: white;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  border-radius: 0 20px 20px 0;
+  animation: strechOut 0.4s ease;
+  overflow: hidden;
+}
+
+/* დანარჩენი სტილები უცვლელია, უბრალოდ გასუფთავდა */
+.categoriesDropdownOverlay {
+  display: none;
+}
+
+.loading {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  z-index: 1001;
+}
+
+/* --- WebKit Scrollbars --- */
+.categoriesDropdown::-webkit-scrollbar {
+  width: 4px;
+}
+.categoriesDropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+.categoriesDropdown::-webkit-scrollbar-thumb {
+  background-color: #7f56d9;
+  border-radius: 10px;
+}
+.categoriesDropdown::-webkit-scrollbar-button {
+  display: none;
+}
+
+@keyframes extend {
+  from {
+    height: 0;
+  }
+  to {
+    height: calc(100vh - 80px);
+  }
+}
+
+@keyframes strechOut {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 630px;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .categoriesContainer {
+    width:100%;
+  }
+
+  .sideContainer {
+    left: 200px;
+    width: 400px;
+    max-width: calc(100vw - 200px);
+  }
+
+  @keyframes strechOut {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 400px;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .categoriesContainer {
+    width: 100%;
+  }
+
+  .sideContainer {
+    left: 180px;
+    width: 300px;
+    max-width: calc(100vw - 180px);
+  }
+
+  @keyframes strechOut {
+    from {
+      width: 0;
+      opacity: 0;
+    }
+    to {
+      width: 300px;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .sideContainer {
+    display: none;
+  }
+}
+
+@media (min-width: 1181px) {
+  .categoriesContainer {
+    position: absolute;
+    top: 61px;
+    left: 0px;
+    width: 250px;
+    height: calc(100vh - 80px);
+  }
+
+  .categoriesDropdown {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 10px 0;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: extend 0.5s ease-in-out;
+  }
+
+  .categoriesDropdownOverlay {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    z-index: 1001;
+    opacity: 0;
+  }
+
+  .loading {
+    position: absolute;
+    top: 61px;
+    left: 0px;
+    width: 250px;
+    height: calc(100vh - 80px);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}

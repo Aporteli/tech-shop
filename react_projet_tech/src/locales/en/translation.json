@@ -1,0 +1,895 @@
+{
+  "header": {
+    "categories": "Categories",
+    "welcome": "Welcome to our electronics store!",
+    "searchPlaceholder": "Search tech...",
+    "cart": "Cart",
+    "signIn": "Sign in",
+    "home": "Go to home page",
+    "account": "Your account",
+    "language": "Change language",
+    "openSearch": "Open search",
+    "close": "Close",
+    "bottomNav": {
+      "label": "Main navigation",
+      "home": "Home",
+      "cart": "Cart",
+      "promotions": "Deals",
+      "compare": "Compare",
+      "saved": "Saved",
+      "signIn": "Sign in",
+      "account": "Account"
+    },
+    "modal": {
+      "searchByCategory": "Search by Category",
+      "allCategories": "All Categories",
+      "searched": "Searched",
+      "clear": "Clear",
+      "loading": "Searching...",
+      "noResults": "No results found",
+      "prompt": "Type at least 2 characters to search"
+    }
+  },
+  "tooltip": {
+    "cart": {
+      "title": "Your cart is empty",
+      "subtitle": "Add items in order to purchase them",
+      "button": "Open shopping",
+      "moreItems": "more items",
+      "subtotal": "Subtotal",
+      "viewCart": "View Cart",
+      "yourList": "Cart"
+    },
+    "wishlist": {
+      "title": "Your wishlist is empty",
+      "subtitle": "Add items in order to purchase them",
+      "button": "Open wishlist",
+      "viewWishlist": "View Wishlist",
+      "YourList": "Whishlist"
+    },
+    "compare": {
+      "title": "Your compare list is empty",
+      "subtitle": "Add items in order to compare them",
+      "button": "Open compare",
+      "items": "Items",
+      "viewCompare": "View Compare",
+      "yourList": "Compare "
+    },
+    "subcategories": {
+      "soon": "Will be available soon..."
+    }
+  },
+  "categories": {
+    "Mobile Phones & Accessories": {
+      "Mobile Phones": [],
+      "Smart Watches": [],
+      "Smart Watch Accessories": [],
+      "Mobile Phone Accessories": [
+        "Protective Case",
+        "Screen Protector",
+        "Smart Glasses",
+        "Adapter",
+        "Portable Speaker",
+        "Power Bank",
+        "Wireless Charger",
+        "Wall Adapter",
+        "USB Cable",
+        "Micro SD Card",
+        "Car Holder",
+        "Car Charger",
+        "Mobile Gaming Controller",
+        "Video Stabilizer/Gimbal",
+        "Selfie Stick"
+      ]
+    },
+    "Computers & Accessories": {
+      "Laptop": [],
+      "Laptop Accessories": [
+        "Laptop Bag",
+        "Laptop Charger",
+        "Laptop Cooler",
+        "Laptop Stand",
+        "Laptop Stylus"
+      ],
+      "Tablet Computer": [],
+      "Tab Accessories": [
+        "Tab Protective Case",
+        "Tab Screen Protector",
+        "Tab Sylus",
+        "Tab Keyboard"
+      ],
+      "All-in-One Computer": [],
+      "Desktop Computer": [],
+      "Monitor": [],
+      "Monitor Accessories": [],
+      "PC Components": [
+        "Motheboard",
+        "CPU",
+        "Video Card",
+        "RAM",
+        "PC Case",
+        "Power Supply",
+        "Cooler",
+        "Thermal Paste",
+        "Storage HDD/SSD"
+      ],
+      "Print & Copy": ["Printer", "Scanner", "Cartridges & Tonners"],
+      "Networking Products": ["Router", "Network Switch", "Network Cables"],
+      "Computer Accessories": [
+        "Mouse",
+        "Mousepad",
+        "Keyboard",
+        "PC Speaker",
+        "PC Webcam",
+        "PC Streaming Accessories",
+        "External HDD/SSD",
+        "USB Flash Drive",
+        "Cables & Adapters",
+        "USB Hubs",
+        "Batteries & Battery Chargers",
+        "Screen Cleaners"
+      ],
+      "UPS Systems": [
+        "Surge Protection & Adapter",
+        "UPS Systems",
+        "UPS Accessories",
+        "Portable Powerstation"
+      ]
+    },
+    "TV & Audio": {
+      "TV": [],
+      "TV Accessories": ["Wall Mount", "Smart TV Box", "TV Cables & Adapters"],
+
+      "Projector": [],
+      "Projector Accessories": [],
+      "Audio Systems": ["Party Speaker", "Turntable", "Soundbar"]
+    },
+    "Gaming": {
+      "Gaming Laptop": [],
+      "Gaming Consoles": [
+        "PlayStation",
+        "PlayStation Accessories",
+        "PlayStation Games",
+        "Xbox",
+        "Xbox Accessories",
+        "Xbox Games",
+        "Nintendo Switch",
+        "Handheld Gaming Consoles",
+        "Meta VR Headset"
+      ],
+
+      "PC Gaming": {
+        "Gaming Desktop PC": [],
+        "PC Gaming Component": []
+      },
+
+      "PC Gaming Accessories": [
+        "Gaming Chair",
+        "Gaming Desk",
+        "Gaming Wheel",
+        "Gaming Mouse",
+        "Gaiming Mouse Pad",
+        "Gaming Keyboard",
+        "Gaming Microphone",
+        "Gaming Controller",
+        "Gaming Backpack"
+      ],
+      "Gaming Monitor": []
+    },
+    "Photo & Video": {
+      "Digital Camera": [],
+      "Digital Camera Accessories": [
+        "Camera Lens",
+        "Camera Bag",
+        "Camera Memory Card",
+        "Camera Battery"
+      ],
+      "Video Camera": [],
+      "Action Camera": [],
+      "Drone": ["Drone Accessories"],
+      "Telescope": [],
+      "Binocular": [],
+      "Microscope": []
+    },
+    "Headphones": {
+      "Wireless Headphones": [],
+      "Kid Headphones": [],
+      "Computer Headset": [],
+      "Headphone accessories": [],
+      "Buds": [],
+      "Wired headphones": []
+    },
+    "Home Appliances": {
+      "Refrigerator": [],
+      "Washing Machine": [],
+      "Dryer Machine": [],
+      "Dishwasher": [],
+      "Gas Cooker": [],
+      "Hob": [],
+      "Built-in Appliances": [
+        "Built-in Electric Oven",
+        "Built-in Hob",
+        "Built-in Cooker Hood",
+        "Built-in Microwave",
+        "Built-in Coffee Machine"
+      ],
+      "Climate Control Appliances": [
+        "Air Conditioner",
+        "Gas Heater",
+        "Electric Heater",
+        "Air Purifier & Humidifier",
+        "Air Cooler",
+        "Portable Air Conditioning"
+      ],
+      "Water Dispenser": [],
+      "Air Dresser": [],
+      "Home Appliance Accessories": []
+    },
+    "Small Domestic Appliances": {
+      "Kitchen Appliances": [
+        "Microwave Oven",
+        "Air Fryer",
+        "Electric Oven",
+        "kitchen Machine",
+        "Blender & Chopper",
+        "Bread Maker",
+        "Mixer",
+        "Multi Cooker",
+        "Meat Grinder",
+        "Sandwich Maker",
+        "Waffle Maker",
+        "Slush Maker",
+        "Toaster",
+        "Pizza Maker",
+        "Grill",
+        "Juicer",
+        "Electric Kettle",
+        "Fruit Dehydrator",
+        "Ice Machine",
+        "Deep Fryer",
+        "Wine Bottle Opener",
+        "Kitchen Scale",
+        "Kitchen Appliance Accessories",
+        "Slicer"
+      ],
+      "Coffee Lovers": [
+        "Coffee Machine",
+        "Coffee Boiler",
+        "Coffee Grinder",
+        "Coffee Machine Accessories",
+        "Coffee",
+        "Milk Frother"
+      ]
+    },
+    "House and Garden": {
+      "Mop & Floor Cleaner": [],
+      "Vacuum Cleaner": [],
+      "Vacuum Cleaner Accessories": [],
+      "Robotic Vacuum Cleaner": [],
+      "High-Pressure Washer": [],
+      "Iron": ["Iron Accessories"],
+      "Steam Cleaner": [],
+      "Garden Inventory": [],
+      "Glass Cleaner": []
+    },
+    "Personal Care": {
+      "Hair Straightener": [],
+      "Hair Dryer": [],
+      "Hair Curling Iron": [],
+      "Epilator": [],
+      "Electric Toothbrushes & Oral Irrigator": [],
+      "Treadmill": [],
+      "Trimmer": [],
+      "Scale": [],
+      "Massager": [],
+      "Skin Care": [],
+      "Electric Shaver": ["Trimmer Head"]
+    },
+    "Smart Home": {
+      "Smart Home Accessories": [],
+      "Smart Lightning": [],
+      "Smart Sensors": [],
+      "Smart Plugs": [],
+      "Smart Locks": [],
+      "Smart Camera": [],
+      "Control / Smart Home": [],
+      "Pet Care": ["Pet Food Feeder", "Pet Water Dispenser"]
+    },
+    "Parent and Child": {
+      "Kid Tab": [],
+      "Kid Microphone": [],
+      "Kids Electric toothbrush": [],
+      "Radio Nanny": [],
+      "Kid Smart Watch": [],
+      "Nanny Camera": [],
+      "Breast Pump": [],
+      "Baby Scale": [],
+      "Baby Food Maker": []
+    },
+    "Electric Vechiles & Car Tools": {
+      "Car Battery Tools": [],
+      "Car Wheel Tools": [],
+      "Video Recorder": []
+    },
+    "Electric Tranport": {
+      "Electric Scooter": [],
+      "Electric Bike": []
+    },
+    "Outlet": {
+      "Refrigerator (Outlet)": [],
+      "Air Conditioner (Outlet)": [],
+      "TV (Outlet)": [],
+      "Induction / Built-in Stove (outlet)": [],
+      "Built-in Cooker Hood (Outlet)": [],
+      "Gas Cookers (Outlet)": [],
+      "Built-in Electric Oven (Outlet)": [],
+      "Dryer Machines (Outlet)": [],
+      "Dishwashers (Outlet)": [],
+      "Washing Machine (Outlet)": []
+    },
+    "Services": {
+      "Mobile Phone Services": [],
+      "Tab Services": [],
+      "Laptop Services": [],
+      "Air Conditioner Services": []
+    }
+  },
+  "listCategories": {
+    "mobilePhonesAndAccessories": "Mobile Phones & Accessories",
+    "computersAndAccessories": "Computers & Accessories",
+    "tvAndAudio": "TV & Audio",
+    "gaming": "Gaming",
+    "photoAndVideo": "Photo & Video",
+    "headphones": "Headphones",
+    "homeAppliances": "Home Appliances",
+    "smallDomesticAppliances": "Small Domestic Appliances",
+    "houseAndGarden": "House and Garden",
+    "personalCare": "Personal Care",
+    "smartHome": "Smart Home",
+    "parentAndChild": "Parent and Child",
+    "electricVehiclesAndCarTools": "Electric Vehicles & Car Tools",
+    "electricTransport": "Electric Transport",
+    "outlet": "Outlet",
+    "services": "Services"
+  },
+
+  "footer": {
+    "aboutUs": {
+      "title": "About Us",
+      "whoWeAre": "Who we are",
+      "termsAndConditions": "Terms & Conditions",
+      "howToBuyOnline": "How to Buy Online",
+      "onlinePaymentMethods": "Online Payment Methods",
+      "addressesOfServiceCenters": "Addresses Of Service Centers"
+    },
+    "termsAndConditions": {
+      "title": "Terms and Conditions",
+      "warrantyTerms": "Warranty Terms",
+      "deviceOperationAndSafetyGuidelines": "Device Operation & Safety Guidelines",
+      "deliveryTermsAndConditions": "Delivery Terms & Conditions",
+      "personalDataPolicy": "Personal Data Policy"
+    },
+    "followUs": {
+      "title": "Follow Us"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Tbilisi, Georgia"
+    },
+    "copyright": "© {{year}} CyberMart",
+    "rights": {
+      "title": "This is a demo/portfolio website. All brand logos and trademarks belong to their respective owners"
+    }
+  },
+  "infoPages": {
+    "back": "Back to home",
+    "termsAndConditions": {
+      "title": "Terms & Conditions",
+      "body": [
+        "This CyberMart website is a demo and portfolio project. Products, prices, and stock are shown for demonstration only.",
+        "By browsing the shop you can view categories, compare items, and add products to a cart or wishlist. Checkout and payment are not processed in this demo."
+      ]
+    },
+    "howToBuyOnline": {
+      "title": "How to Buy Online",
+      "body": [
+        "Open a category, pick a product, and tap Add to cart or Buy now.",
+        "Review your cart, then continue to checkout. In this demo the flow stops at the cart — no real order is placed."
+      ]
+    },
+    "onlinePaymentMethods": {
+      "title": "Online Payment Methods",
+      "body": [
+        "A live store would accept cards and local payment providers.",
+        "This demo does not collect payment details or charge any account."
+      ]
+    },
+    "warrantyTerms": {
+      "title": "Warranty Terms",
+      "body": [
+        "Manufacturer warranty terms would apply to each product in a live shop.",
+        "Because this is a demo catalog, no warranty, repair, or replacement is offered."
+      ]
+    },
+    "deviceSafety": {
+      "title": "Device Operation & Safety Guidelines",
+      "body": [
+        "Always follow the manufacturer instructions that come with a device.",
+        "This page is informational. CyberMart does not ship products from this demo site."
+      ]
+    },
+    "deliveryTerms": {
+      "title": "Delivery Terms & Conditions",
+      "body": [
+        "A live shop would list delivery areas, times, and fees here.",
+        "No orders are shipped from this demo website."
+      ]
+    },
+    "personalDataPolicy": {
+      "title": "Personal Data Policy",
+      "body": [
+        "Account, cart, and wishlist data in this demo stay in your browser or the local development server.",
+        "Do not enter real passwords or payment information. This project is for portfolio use only."
+      ]
+    }
+  },
+  "categoriesONhomePage": {
+    "categories": {
+      "title": "Categories"
+    },
+    "categoriesONhome": {
+      "Mobile Phones": "Mobile Phones & Accessories",
+      "TV & Audio": "TV & Audio",
+      "Photo & Video": "Photo & Video",
+      "Computers & Laptops": "Computers & Laptops",
+      "Gaming": "Gaming",
+      "Home Appliances": "Home Appliances",
+      "House & Garden": "House & Garden",
+      "Oven & Kitchen": "Oven & Kitchen",
+      "Personal Care": "Personal Care",
+      "Smart Home": "Smart Home"
+    }
+  },
+  "brands": {
+    "title": "Brands"
+  },
+  "categoryPage": {
+    "title": "Categories",
+    "notFound": "Category not found",
+    "errorHint": "Please check the link or try again later."
+  },
+  "discountSlider": {
+    "title": "Discount",
+    "buyNow": "Buy Now",
+    "perMonthFrom": "Per Month From: {{price}}"
+  },
+  "giftSlider": {
+    "title": "Gift"
+  },
+  "smallDomesticAppliances": {
+    "title": "Small Domestic Appliances",
+    "description": "Kitchen essentials for everyday cooking — from coffee gear to air fryers. Browse popular appliance groups below.",
+    "data": [
+      {
+        "id": 1,
+        "key": "for_coffee_lovers",
+        "title": "For Coffee Lovers",
+        "image": "../../assets/pictures/homePagePhotos/mixPhotos/House And Garden1.webp",
+        "link": "/s/coffee-lovers"
+      },
+      {
+        "id": 2,
+        "key": "blender_and_chopper",
+        "title": "Blender and Chopper",
+        "image": "../../assets/pictures/homePagePhotos/mixPhotos/House And Garden2.webp",
+        "link": "/s/blender-and-chopper"
+      },
+      {
+        "id": 3,
+        "key": "juicer",
+        "title": "Juicer",
+        "image": "../../assets/pictures/homePagePhotos/mixPhotos/House And Garden3.webp",
+        "link": "/s/juicer"
+      },
+      {
+        "id": 4,
+        "key": "microwave",
+        "title": "Microwave",
+        "image": "../../assets/pictures/homePagePhotos/mixPhotos/House And Garden4.webp",
+        "link": "/s/microwave-oven"
+      },
+      {
+        "id": 5,
+        "key": "air_fryer",
+        "title": "Air Fryer",
+        "image": "../../assets/pictures/homePagePhotos/mixPhotos/House And Garden5.webp",
+        "link": "/s/air-fryer"
+      }
+    ]
+  },
+  "gamingCategory": {
+    "title": "Gaming",
+    "description": "Build your setup with consoles, laptops, monitors, and accessories. Pick a category to explore matching products.",
+    "data": [
+      {
+        "id": 1,
+        "key": "gaming_console",
+        "title": "Gaming Console",
+        "image": "../../assets/pictures/homePagePhotos/mixPhotos/Gaming1.webp",
+        "link": "/s/gaming-consoles"
+      },
+      {
+        "id": 2,
+        "key": "gaming_laptop",
+        "title": "Gaming Laptop",
+        "image": "../../assets/pictures/homePagePhotos/mixPhotos/Gaming2.webp",
+        "link": "/s/gaming-laptop"
+      },
+      {
+        "id": 3,
+        "key": "gaming_monitor",
+        "title": "Gaming Monitor",
+        "image": "../../assets/pictures/homePagePhotos/mixPhotos/Gaming3.webp",
+        "link": "/s/gaming-monitor"
+      },
+      {
+        "id": 4,
+        "key": "gaming_accessories",
+        "title": "Gaming Accessories",
+        "image": "../../assets/pictures/homePagePhotos/mixPhotos/Gaming4.webp",
+        "link": "/s/pc-gaming-accessories"
+      },
+      {
+        "id": 5,
+        "key": "gaming_chair",
+        "title": "Gaming Chair",
+        "image": "../../assets/pictures/homePagePhotos/mixPhotos/Gaming5.webp",
+        "link": "/s/gaming-chair"
+      }
+    ]
+  },
+  "subCategory": {
+    "productsCount": "{{count}} products",
+    "noProducts": "No products match your filters",
+    "noProductsHint": "Try widening the price range or clearing some filters."
+  },
+  "sort": {
+    "title": "Sort",
+    "all": "all",
+    "priceDecrese": "Price: decreasing",
+    "priceIncrease": "Price: increasing",
+    "name": "Name: A-Z",
+    "nameReverse": "Name: Z-A",
+    "filter": "Filter"
+  },
+  "layout": {
+    "blog": "Blog",
+    "shops": "Shops",
+    "allPromotions": "All Promotions"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Latest news, reviews, and tech insights",
+    "readMore": "Read More",
+    "backToBlog": "Back to Blog",
+    "home": "Home",
+    "keyTakeaways": "Key Takeaways",
+    "writtenBy": "Written by",
+    "relatedPosts": "Related Posts",
+    "previous": "Previous",
+    "next": "Next",
+    "postNotFound": "Article not found",
+    "post1Title": "Latest Tech Trends 2024",
+    "post1Excerpt": "Discover the cutting-edge technologies shaping our future in this comprehensive guide.",
+    "author1": "John Smith",
+    "category1": "Technology",
+    "post1Tag1": "AI",
+    "post1Tag2": "Innovation",
+    "post1Tag3": "Future Tech",
+    "post1Content": {
+      "paragraphs": [
+        "Technology in 2024 is moving faster than ever, with artificial intelligence, wearable devices, and smarter connectivity reshaping how we work and live. From generative AI tools to edge computing, the gap between ideas and real products is shrinking every month.",
+        "One of the biggest shifts is how AI is becoming part of everyday gadgets. Phones, laptops, and home devices now offer on-device intelligence that feels personal, private, and practical. That means better cameras, smarter assistants, and workflows that adapt to you.",
+        "Sustainability is also a major theme. Brands are focusing on repairability, longer software support, and energy-efficient chips. Buyers are no longer choosing only by specs — they want devices that last longer and waste less."
+      ],
+      "highlights": [
+        "On-device AI is becoming a standard feature across phones and laptops.",
+        "Foldable devices and improved wearables are entering mainstream use.",
+        "Repairability and longer support cycles are influencing purchase decisions."
+      ],
+      "conclusion": "If you are planning your next tech upgrade, prioritize products that combine strong performance with longer support and practical AI features. That balance will matter more than raw power alone."
+    },
+    "post2Title": "Best Gaming Laptops Under $1000",
+    "post2Excerpt": "Our top picks for budget-friendly gaming laptops that don't compromise on performance.",
+    "author2": "Sarah Johnson",
+    "category2": "Gaming",
+    "post2Tag1": "Gaming",
+    "post2Tag2": "Laptops",
+    "post2Tag3": "Budget",
+    "post2Content": {
+      "paragraphs": [
+        "Finding a capable gaming laptop under $1000 is realistic in 2024 if you know which specs matter. You do not need the most expensive GPU to enjoy modern titles at high settings on 1080p displays.",
+        "Look for at least 16GB of RAM, a dedicated GPU in the RTX 4050 class or equivalent, and a high-refresh display. Cooling quality also matters — a strong chassis with good airflow keeps performance stable during long sessions.",
+        "Storage and upgrade options are easy to overlook. A fast 512GB SSD is a good baseline, and models with a free RAM or storage slot give you better long-term value."
+      ],
+      "highlights": [
+        "Prioritize GPU and cooling before chasing ultra-thin designs.",
+        "16GB RAM should be the minimum for modern gaming.",
+        "A 144Hz panel makes a bigger difference than minor CPU upgrades."
+      ],
+      "conclusion": "A well-chosen budget gaming laptop can handle competitive and AAA games smoothly. Focus on balanced specs, not marketing labels, and you will get far more playable performance for your money."
+    },
+    "post3Title": "Smart Home Automation Guide",
+    "post3Excerpt": "Learn how to transform your home into a smart living space with affordable devices.",
+    "author3": "Mike Wilson",
+    "category3": "Smart Home",
+    "post3Tag1": "Smart Home",
+    "post3Tag2": "Automation",
+    "post3Tag3": "IoT",
+    "post3Content": {
+      "paragraphs": [
+        "Building a smart home does not require a full renovation. Start with lighting, plugs, and a reliable hub or ecosystem so every new device works together without friction.",
+        "Smart bulbs and plugs deliver the fastest return. You can schedule energy savings, create arrival routines, and control rooms from your phone. Cameras and sensors come next for security and awareness.",
+        "Compatibility is the key decision. Choose Matter-ready or well-supported platform devices so you can expand later without replacing everything you already own."
+      ],
+      "highlights": [
+        "Start with lighting and smart plugs for quick wins.",
+        "Pick one main ecosystem to avoid connection headaches.",
+        "Add cameras and sensors after your core routines are stable."
+      ],
+      "conclusion": "A smart home works best when it feels invisible. Automate the routines you repeat every day, and expand only when each new device clearly improves comfort, safety, or energy use."
+    },
+    "post4Title": "iPhone 15 Pro Max Review",
+    "post4Excerpt": "An in-depth look at Apple's latest flagship smartphone and its features.",
+    "author4": "Emily Davis",
+    "category4": "Mobile",
+    "post4Tag1": "iPhone",
+    "post4Tag2": "Review",
+    "post4Tag3": "Apple",
+    "post4Content": {
+      "paragraphs": [
+        "The iPhone 15 Pro Max remains one of the strongest premium phones for photography, battery life, and long-term software support. Titanium construction makes it feel more refined while reducing weight compared with previous Pro Max models.",
+        "Camera performance is the headline feature. The larger sensor, improved telephoto reach, and computational photography tools produce excellent results in daylight and low light. Video creators also benefit from stronger stabilization and ProRes options.",
+        "Everyday performance is excellent thanks to the A17 Pro chip. Gaming, editing, and multitasking feel effortless, and USB-C finally makes accessory sharing easier across devices."
+      ],
+      "highlights": [
+        "Camera system leads the premium Android and iOS competition.",
+        "Battery life comfortably covers a full intensive day.",
+        "USB-C is a practical upgrade for travel and desk setups."
+      ],
+      "conclusion": "If you want a flagship that stays relevant for years, the iPhone 15 Pro Max is still an easy recommendation — especially for users who care about camera quality and long software updates."
+    },
+    "post5Title": "Wireless Headphones Buying Guide",
+    "post5Excerpt": "Everything you need to know before buying your next pair of wireless headphones.",
+    "author5": "David Brown",
+    "category5": "Audio",
+    "post5Tag1": "Audio",
+    "post5Tag2": "Headphones",
+    "post5Tag3": "Buying Guide",
+    "post5Content": {
+      "paragraphs": [
+        "Choosing wireless headphones is about more than brand names. Fit, noise cancellation, codec support, and battery life determine whether you enjoy them every day or leave them in a drawer.",
+        "Over-ear models usually win for comfort and ANC strength, while earbuds are better for workouts and commuting. If you take many calls, prioritize microphone quality and multipoint Bluetooth connections.",
+        "Also check charging convenience and app support. Features like custom EQ, wear detection, and firmware updates can significantly improve the experience after purchase."
+      ],
+      "highlights": [
+        "Match the form factor to your daily routine.",
+        "ANC quality matters more than peak volume for travel.",
+        "Multipoint pairing is essential if you switch between phone and laptop."
+      ],
+      "conclusion": "The best wireless headphones are the ones you forget you are wearing. Test comfort first, then compare ANC, call quality, and battery claims against real reviews before you buy."
+    },
+    "post6Title": "Home Theater Setup Tips",
+    "post6Excerpt": "Create the ultimate home cinema experience with our expert recommendations.",
+    "author6": "Lisa Anderson",
+    "category6": "TV & Audio",
+    "post6Tag1": "Home Theater",
+    "post6Tag2": "TV",
+    "post6Tag3": "Audio Setup",
+    "post6Content": {
+      "paragraphs": [
+        "A great home theater is less about buying the biggest TV and more about balancing picture, sound, and room layout. Start by choosing a display size that fits your viewing distance, then build audio around it.",
+        "Sound makes the biggest emotional difference. A solid soundbar with a wireless subwoofer already transforms movies, while a 5.1 system unlocks true surround immersion if your room allows speaker placement.",
+        "Do not ignore lighting and cable management. Bias lighting reduces eye strain, and clean wiring keeps the setup looking premium. Calibration tools or built-in TV wizards help you get accurate color and contrast quickly."
+      ],
+      "highlights": [
+        "Choose TV size based on seating distance, not only wall space.",
+        "Upgrade audio before chasing extreme resolution features.",
+        "Calibration and room lighting improve perceived picture quality."
+      ],
+      "conclusion": "Build your home theater in layers: display, audio, then ambience. A thoughtfully arranged mid-range setup often feels more cinematic than an expensive system placed poorly."
+    }
+  },
+  "shops": {
+    "title": "Our Shops",
+    "subtitle": "Find your nearest store location",
+    "allCities": "All Cities",
+    "getDirections": "Get Directions"
+  },
+  "homeBanner": {
+    "badge": "Limited time",
+    "title": "Save up to 50% on this season's tech",
+    "subtitle": "Handpicked deals on laptops, phones, audio and smart home — updated every week."
+  },
+  "promotions": {
+    "title": "Promotions",
+    "subtitle": "Exclusive deals and special offers just for you",
+    "featured": "Featured",
+    "validUntil": "Valid until",
+    "shopNow": "Shop Now",
+    "viewDetails": "View Details",
+    "promo1Title": "Summer Sale - Up to 50% Off",
+    "promo1Desc": "Get amazing discounts on selected electronics and gadgets. Limited time offer!",
+    "category1": "Summer Sale",
+    "promo2Title": "Gaming Bundle Special",
+    "promo2Desc": "Buy a gaming laptop and get a free gaming mouse and keyboard.",
+    "category2": "Gaming",
+    "promo3Title": "Smart Home Starter Kit",
+    "promo3Desc": "Complete smart home package at an unbeatable price. Includes smart bulbs, thermostat, and security camera.",
+    "category3": "Smart Home",
+    "promo4Title": "Audio Equipment Clearance",
+    "promo4Desc": "Premium headphones and speakers at clearance prices. While supplies last.",
+    "category4": "Audio",
+    "promo5Title": "Mobile Phone Trade-In Bonus",
+    "promo5Desc": "Trade in your old phone and get an extra $100 credit towards a new device.",
+    "category5": "Mobile",
+    "promo6Title": "TV & Home Theater Event",
+    "promo6Desc": "Save big on 4K TVs and home theater systems. Free installation included.",
+    "category6": "TV & Audio",
+    "promo7Title": "Laptop Back to School",
+    "promo7Desc": "Special pricing for students on laptops and tablets. Valid student ID required.",
+    "category7": "Computers",
+    "promo8Title": "Free Shipping Weekend",
+    "promo8Desc": "Enjoy free shipping on all orders over $50 this weekend only.",
+    "category8": "Shipping"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "emptyHint": "Browse our catalog and add the products you like — they will show up here.",
+    "itemsCount": "{{count}} items",
+    "continueShopping": "Continue Shopping",
+    "summary": "Order Summary",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "freeShipping": "Free",
+    "total": "Total",
+    "increase": "Increase quantity",
+    "decrease": "Decrease quantity",
+    "remove": "Remove from cart",
+    "checkout": "Proceed to Checkout"
+  },
+  "wishlist": {
+    "title": "Wishlist",
+    "empty": "Your wishlist is empty",
+    "emptyHint": "Tap the heart on any product to save it here for later.",
+    "itemsCount": "{{count}} items",
+    "moveAllToCart": "Move All to Cart",
+    "moving": "Moving..."
+  },
+  "product": {
+    "addToCart": "Add to Cart"
+  },
+  "compare": {
+    "title": "Compare Products",
+    "empty": "No products to compare",
+    "emptyHint": "Add products from the same category to see their specifications side by side.",
+    "itemsCount": "{{count}} of {{max}} products",
+    "clear": "Clear All",
+    "continueShopping": "Continue Shopping",
+    "addProduct": "Add Product to Compare",
+    "remove": "Remove from comparison",
+    "product": "Product",
+    "price": "Price",
+    "searchPlaceholder": "Search products...",
+    "closeSearch": "Close search",
+    "searchPrompt": "Start typing to search",
+    "searchPromptHint": "Enter at least 2 characters to find products you can compare.",
+    "searchErrorHint": "Please check your connection and try again.",
+    "noResults": "No products found",
+    "noResultsHint": "Try a different name, or check the spelling."
+  },
+  "searchResults": {
+    "title": "Search Results",
+    "loading": "Loading...",
+    "resultsFound": "results found",
+    "noResults": "No results found for your search",
+    "backToHome": "Back to Home"
+  },
+  "user": {
+    "title": "User Profile",
+    "welcome": "Welcome!",
+    "email": "Email",
+    "phone": "Phone",
+    "userId": "User ID",
+    "logout": "Logout",
+    "notLoggedIn": "You are not logged in",
+    "greeting": "Hi",
+    "orders": "Orders",
+    "promoCodes": "Promo Codes",
+    "addresses": "Addresses",
+    "cards": "Cards",
+    "profileDetails": "Profile Details",
+    "signOut": "Sign Out",
+    "pendingOrders": "Pending Orders",
+    "finishedOrders": "Finished Orders",
+    "noPendingOrders": "No pending orders",
+    "noFinishedOrders": "No finished orders",
+    "noPromoCodes": "No promo codes available",
+    "noAddresses": "No addresses saved",
+    "noCards": "No payment cards saved",
+    "sectionTitle": "Profile Details"
+  },
+  "auth": {
+    "title": "Profile",
+    "signInTitle": "Authorize In The System",
+    "signUpTitle": "Create Account",
+    "byPhone": "By Phone",
+    "byEmail": "By Email",
+    "mobileNumber": "Mobile number",
+    "emailAddress": "Email address",
+    "password": "Password",
+    "signingIn": "Signing In...",
+    "getCode": "Get Code",
+    "signInButton": "Sign In",
+    "signInWithGoogle": "Sign in with Google",
+    "signUpButton": "Sign Up",
+    "signingUp": "Signing Up...",
+    "mobileNumberSignup": "Mobile Number",
+    "emailAddressSignup": "Email Address",
+    "agreeTerms": "By Clicking On Sign Up Button I Agree To Terms And Conditions",
+    "agreeMarketing": "I Agree To Receive Information/Marketing Messages",
+    "recaptcha": {
+      "protected": "This site is protected by reCAPTCHA and the Google",
+      "privacyPolicy": "Privacy Policy",
+      "and": "and",
+      "termsOfService": "Terms of Service",
+      "apply": "apply."
+    },
+    "errors": {
+      "enterMobileNumber": "Please enter your mobile number",
+      "enterEmailAndPassword": "Please enter your email and password",
+      "agreeTerms": "Please agree to the terms and conditions"
+    }
+  },
+  "singleProduct": {
+    "loading": "Loading...",
+    "productNotFound": "Product not found",
+    "backToHome": "Back to Home",
+    "overview": "Overview",
+    "storage": "Storage",
+    "checkPrice": "Check availability",
+    "inStock": "In stock",
+    "outOfStock": "Out of stock",
+    "youSave": "You save {{amount}} ₾",
+    "freeDelivery": "Free delivery",
+    "warranty": "Official warranty",
+    "authentic": "100% authentic",
+    "specsCount": "specs",
+    "addToCart": "Add to Cart",
+    "buyNow": "Buy Now",
+    "description": "Description",
+    "specifications": "Specifications",
+    "availableAddresses": "Available Addresses",
+    "noAddresses": "No addresses added yet",
+    "enterAddress": "Enter address",
+    "addAddress": "Add Address",
+    "quantity": "Quantity",
+    "seeMore": "See More",
+    "showLess": "Show Less",
+    "similarProducts": "Similar Products",
+    "addToWishlist": "Add to wishlist",
+    "addToCompare": "Add to compare"
+  },
+  "brand": {
+    "brandNotFound": "Brand not found",
+    "notFoundHint": "This brand may have been removed, or the link is incorrect.",
+    "backToHome": "Back to Home",
+    "productsCount": "{{count}} products",
+    "noProducts": "No products found for this brand",
+    "noProductsHint": "We are not carrying items from this brand right now. Check back soon.",
+    "pagination": "Pagination",
+    "previous": "Previous",
+    "next": "Next"
+  }
+}

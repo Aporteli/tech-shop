@@ -1,0 +1,172 @@
+.container {
+  --hg-primary: #7f56d9;
+  --hg-primary-darker: #5b3ab0;
+  --hg-primary-border: rgba(127, 86, 217, 0.22);
+  --hg-ink: #111827;
+  --hg-muted: #6b7280;
+  --hg-border: #e8e4f2;
+
+  width: 100%;
+  margin: var(--section-gap, 48px) 0 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--hg-ink);
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+}
+
+.title::before {
+  content: '';
+  width: 4px;
+  height: 24px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, var(--hg-primary), var(--hg-primary-darker));
+}
+
+.description {
+  margin: 0 0 18px;
+  max-width: 720px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--hg-muted);
+  padding-left: 16px;
+}
+
+/* Mosaic layout */
+.mainDiv {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  aspect-ratio: 15 / 5;
+  grid-template-areas:
+    'console laptop laptop chair'
+    'console monitor accessories chair';
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  border: 1px solid var(--hg-border);
+  box-shadow: 0 2px 10px rgba(76, 45, 143, 0.05);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.item:hover {
+  transform: translateY(-4px);
+  border-color: var(--hg-primary-border);
+  box-shadow: 0 14px 32px rgba(76, 45, 143, 0.16);
+}
+
+.item:focus-visible {
+  outline: 2px solid var(--hg-primary);
+  outline-offset: 3px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: center;
+  border-radius: 0;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.item:hover .image {
+  transform: scale(1.06);
+}
+
+.item1 {
+  grid-area: console;
+}
+
+.item2 {
+  grid-area: laptop;
+}
+
+.item3 {
+  grid-area: monitor;
+}
+
+.item4 {
+  grid-area: accessories;
+}
+
+.item5 {
+  grid-area: chair;
+}
+
+@media (max-width: 900px) {
+  .mainDiv {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    aspect-ratio: unset;
+    gap: 12px;
+    grid-template-areas:
+      'console laptop'
+      'monitor accessories'
+      'chair chair';
+  }
+
+  .item {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .description {
+    margin-bottom: 14px;
+    padding-left: 16px;
+  }
+
+  .item {
+    border-radius: 14px;
+  }
+}
+
+@media (max-width: 520px) {
+  .mainDiv {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'console'
+      'laptop'
+      'monitor'
+      'accessories'
+      'chair';
+  }
+
+  .item {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .item,
+  .image {
+    transition: none;
+  }
+
+  .item:hover,
+  .item:hover .image {
+    transform: none;
+  }
+}

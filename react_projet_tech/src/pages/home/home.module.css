@@ -1,0 +1,224 @@
+.homeWrapper {
+  width: 100%;
+}
+
+.mainSection {
+  width: 100%;
+  max-width: var(--page-max-width, 1250px);
+  height: auto;
+  margin: 0 auto;
+  padding: 0 var(--page-pad-x, 20px) 80px;
+}
+
+/* ── Twin promo banners ── */
+.imagesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  height: 180px;
+  margin-top: 18px;
+}
+
+.imageItem {
+  border-radius: 18px;
+  overflow: hidden;
+  min-height: 0;
+  border: 1px solid #e8e4f2;
+  box-shadow: 0 4px 16px rgba(76, 45, 143, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.imageItem:hover {
+  transform: translateY(-4px);
+  border-color: rgba(127, 86, 217, 0.22);
+  box-shadow: 0 14px 34px rgba(76, 45, 143, 0.14);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.imageItem:hover .image {
+  transform: scale(1.06);
+}
+
+/* ── Promo banner ── */
+.promoBanner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: var(--section-gap, 48px);
+  width: 100%;
+  min-height: 230px;
+  padding: 40px 48px;
+  border-radius: 22px;
+  overflow: hidden;
+  isolation: isolate;
+  text-decoration: none;
+  background: linear-gradient(115deg, #4c2d8f 0%, #7f56d9 48%, #a385ec 100%);
+  box-shadow: 0 16px 44px rgba(76, 45, 143, 0.3);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Two soft light blooms give the flat gradient some depth */
+.promoBanner::before,
+.promoBanner::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.promoBanner::before {
+  width: 420px;
+  height: 420px;
+  right: -80px;
+  top: -160px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.22) 0%, transparent 68%);
+}
+
+.promoBanner::after {
+  width: 320px;
+  height: 320px;
+  right: 140px;
+  bottom: -180px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.14) 0%, transparent 70%);
+}
+
+.promoBanner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 56px rgba(76, 45, 143, 0.38);
+}
+
+.promoBanner:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.promoContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 560px;
+}
+
+.promoBadge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.promoTitle {
+  margin: 0;
+  font-size: clamp(24px, 3.4vw, 38px);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.promoText {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.promoCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: #fff;
+  color: #5b3ab0;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(17, 24, 39, 0.16);
+  transition: gap 0.25s ease, box-shadow 0.25s ease;
+}
+
+.promoBanner:hover .promoCta {
+  gap: 14px;
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.24);
+}
+
+@media (max-width: 768px) {
+  .mainSection {
+    padding: 0 16px 64px;
+  }
+
+  .imagesContainer {
+    height: 130px;
+    gap: 12px;
+    margin-top: 14px;
+  }
+
+  .imageItem {
+    border-radius: 14px;
+  }
+
+  .promoBanner {
+    min-height: 0;
+    margin-top: 36px;
+    padding: 28px 24px;
+    border-radius: 16px;
+  }
+
+  .promoText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .imagesContainer {
+    height: 110px;
+    gap: 10px;
+  }
+
+  .promoBanner {
+    padding: 24px 20px;
+  }
+
+  .promoCta {
+    padding: 11px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .imageItem,
+  .image,
+  .promoBanner,
+  .promoCta {
+    transition: none;
+  }
+
+  .imageItem:hover,
+  .imageItem:hover .image,
+  .promoBanner:hover {
+    transform: none;
+  }
+}

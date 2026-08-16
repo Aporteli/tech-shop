@@ -1,0 +1,181 @@
+.tooltip {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  animation: fadeIn 0.1s ease-in-out;
+}
+
+.hiddenDiv {
+  border: 1px solid #000;
+  border-radius: 20px;
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  left: 0;
+  width: 200px;
+  height: 20px;
+  z-index: 1001;
+  /* animation: fadeIn 0.2s ease-in-out; */
+}
+
+.titleDefault {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.emptyCartImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.continueShoppingButton {
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #7f56d9;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 90%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* ანიმაცია იწყება 5 პიქსელით დაბლა, რაც აძლევს მსუბუქი ამოტივტივების ეფექტს */
+    transform: translateY(5%);
+  }
+  to {
+    opacity: 1;
+    /* სრულდება თავის ძირითად პოზიციაზე */
+    transform: translateY(0%);
+  }
+}
+
+.wishlistItems {
+  width: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
+
+.wishlistItem {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.wishlistItem:last-child {
+  border-bottom: none;
+}
+
+.itemImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.itemDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+
+.itemPrice {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7f56d9;
+  margin: 0;
+}
+
+.removeButton {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bfa6f6;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #7f56d9;
+  transition: all 0.2s;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.removeButton:hover {
+  background-color: #6941c6;
+  color: #fff;
+}
+
+.wishlistSummary {
+  width: 100%;
+  padding-top: 10px;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.viewWishlistButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #7f56d9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.viewWishlistButton:hover {
+  background-color: rgb(95, 74, 148);
+}
