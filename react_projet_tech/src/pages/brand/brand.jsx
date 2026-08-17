@@ -4,8 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import styles from './brand.module.css';
 import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
-
-const BASE_URL = 'http://localhost:5001';
+import { API_URL as BASE_URL } from '../../api/apiBase';
 
 function getVisiblePages(current, total) {
   if (total <= 7) {

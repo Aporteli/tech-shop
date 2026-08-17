@@ -17,6 +17,7 @@ import {
   sendEmailVerificationCode,
   verifyEmailCode
 } from '../../api/authService';
+import { API_URL } from '../../api/apiBase';
 
 export default function AuthModal({ openModal, closeModal }) {
   const { t } = useTranslation();
@@ -137,7 +138,7 @@ export default function AuthModal({ openModal, closeModal }) {
       const result = await confirmationResult.confirm(otpCode);
       const firebaseToken = await result.user.getIdToken();
 
-      const res = await fetch('http://localhost:5001/api/auth/phone', {
+      const res = await fetch(`${API_URL}/api/auth/phone`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ firebaseToken })

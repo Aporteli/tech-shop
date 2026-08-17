@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { API_URL } from "../api/apiBase";
 
 export default function AdminAddProduct() {
   const [subCategories, setSubCategories] = useState([]);
@@ -23,7 +24,7 @@ export default function AdminAddProduct() {
   // 1. წამოვიღოთ ქვეკატეგორიები და ბრენდები ჩამოშლილი სიისთვის (Dropdown)
   useEffect(() => {
     // ქვეკატეგორიების წამოღება
-    fetch("http://localhost:5001/api/categories/all-subcategories")
+    fetch(`${API_URL}/api/categories/all-subcategories`)
       .then((res) => res.json())
       .then((data) => setSubCategories(data))
       .catch((err) => console.error(err));
@@ -36,7 +37,7 @@ export default function AdminAddProduct() {
     setAttributeValues({}); // გასუფთავება
 
     if (catId) {
-      fetch(`http://localhost:5001/api/categories/category-attributes/${catId}`)
+      fetch(`${API_URL}/api/categories/category-attributes/${catId}`)
         .then((res) => res.json())
         .then((data) => setCategoryAttributes(data))
         .catch((err) => console.error(err));
@@ -82,7 +83,7 @@ export default function AdminAddProduct() {
 
     try {
       const res = await fetch(
-        "http://localhost:5001/api/categories/add-product",
+        `${API_URL}/api/categories/add-product`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { API_URL } from './api/apiBase';
 
 export default function CategoriesMenu() {
   const [groupedCategories, setGroupedCategories] = useState({});
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/categories/all-subcategories')
+    fetch(`${API_URL}/api/categories/all-subcategories`)
       .then((res) => res.json())
       .then((data) => {
         // ბრტყელი სიის დაჯგუფება მშობელი კატეგორიების მიხედვით

@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5001";
+import { API_URL as BASE_URL } from "./apiBase";
 
 // Helper function to get auth token
 const getAuthToken = () => {

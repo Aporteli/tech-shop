@@ -3,6 +3,7 @@ import { useAuth } from '../context/AuthContext';
 import { useCart } from '../context/CartContext';
 import { useWishlist } from '../context/WishlistContext';
 import { useCompare } from '../context/CompareContext';
+import { API_URL } from '../api/apiBase';
 
 export const useAppSync = () => {
   // 2. ამოვიღებთ იმ ფუნქციებს, რომლებიც ამ კონტექსტების State-ებს ანახლებენ
@@ -24,7 +25,7 @@ export const useAppSync = () => {
 
       try {
         // ბ) ვაგზავნით ბექენდზე
-        const response = await fetch('http://localhost:5001/api/user/sync', {
+        const response = await fetch(`${API_URL}/api/user/sync`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

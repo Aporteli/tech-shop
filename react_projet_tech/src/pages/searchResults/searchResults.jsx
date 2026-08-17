@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import ProductCard from '../subCategoryPage/components/productCard/productCard';
 import { IoIosArrowDown } from 'react-icons/io';
 import { fetchAllCategoryAttributes } from '../../api/categoryService';
+import { API_URL } from '../../api/apiBase';
 
 function SearchResults() {
   const { t, i18n } = useTranslation();
@@ -41,7 +42,7 @@ function SearchResults() {
       try {
         const lang = i18n.language.split('-')[0];
         const response = await fetch(
-          `http://localhost:5001/api/search?q=${encodeURIComponent(query)}&lang=${lang}&limit=500`
+          `${API_URL}/api/search?q=${encodeURIComponent(query)}&lang=${lang}&limit=500`
         );
         const result = await response.json();
 
@@ -133,7 +134,7 @@ function SearchResults() {
         Object.entries(activeFilters.filters).map(([key, values]) => [key, [...new Set(values)]])
       );
 
-      const response = await fetch('http://localhost:5001/api/products/filter-multi-category', {
+      const response = await fetch(`${API_URL}/api/products/filter-multi-category`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

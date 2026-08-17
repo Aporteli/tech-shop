@@ -10,9 +10,8 @@ import MobileFilter from './components/mobileFilter/mobileFilter';
 import SortDropdown from './components/sortDropdown/sortDropdown';
 import Breadcrumb from './components/breadcrumb/breadcrumb';
 import MobileFilters from './components/mobileFilters/mobileFilters';
+import { API_URL } from '../../api/apiBase';
 import 'rc-slider/assets/index.css';
-
-const BASE_URL = 'http://localhost:5001';
 
 export default function SubCategoryPage() {
   const sortRef = useRef(null);
@@ -86,7 +85,7 @@ export default function SubCategoryPage() {
         lang: i18n.language.split('-')[0]
       };
 
-      const response = await fetch('http://localhost:5001/api/products/filter', {
+      const response = await fetch(`${API_URL}/api/products/filter`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

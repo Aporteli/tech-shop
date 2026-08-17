@@ -9,8 +9,7 @@ import { useWishlist } from '../../context/WishlistContext';
 import { useCompare } from '../../context/CompareContext';
 import OptimizedImage from '../OptimizedImage/OptimizedImage';
 import usePointerDrag from '../../hooks/usePointerDrag';
-
-const BASE_URL = 'http://localhost:5001';
+import { API_URL as BASE_URL } from '../../api/apiBase';
 
 export default function SimilarProductsSlider({ productId }) {
   const { t } = useTranslation();

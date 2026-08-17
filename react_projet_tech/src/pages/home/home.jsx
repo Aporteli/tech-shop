@@ -10,6 +10,7 @@ import DiscountSlider from '../../components/homePageSections/discountSlider';
 import SmallDomesticAppliances from '../../components/homePageSections/smallDomesticAppliances';
 import Gaming from '../../components/homePageSections/gaming';
 import HomeCategoriesSection from '../../components/homePageSections/homeCategoriesSection';
+import { API_URL as BASE_URL } from '../../api/apiBase';
 import mainSliderImg_1 from '../../assets/pictures/homePagePhotos/mainSliderPhotos/mainSliderImg-1.webp';
 import mainSliderImg_2 from '../../assets/pictures/homePagePhotos/mainSliderPhotos/mainSliderImg-2.webp';
 import mainSliderImg_3 from '../../assets/pictures/homePagePhotos/mainSliderPhotos/mainSliderImg-3.webp';
@@ -24,8 +25,6 @@ import mainSliderImg_11 from '../../assets/pictures/homePagePhotos/mainSliderPho
 
 import homePagePhoto_1 from '../../assets/pictures/homePagePhotos/mixPhotos/homePagePhoto-1.webp';
 import homePagePhoto_2 from '../../assets/pictures/homePagePhotos/mixPhotos/homePagePhoto-2.webp';
-
-const BASE_URL = 'http://localhost:5001';
 
 const myImages = [
   { url: mainSliderImg_1, alt: 'first' },

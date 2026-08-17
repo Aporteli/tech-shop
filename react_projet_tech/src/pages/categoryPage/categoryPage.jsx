@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import OptimizedImage from "../../components/OptimizedImage/OptimizedImage";
 import { getCategoryImageSrc, parseCategoryImages } from "../../utils/imageUrl";
+import { API_URL } from "../../api/apiBase";
 
 function CategoryPage() {
   const { slug } = useParams(); // URL-იდან ვიღებთ სლაგს (მაგ: mobile-phones-and-accessories)
@@ -37,7 +38,7 @@ function CategoryPage() {
     setLoading(true);
     setError(null);
     fetch(
-    `http://localhost:5001/api/categories/single/${slug}?lang=${i18n.language.split("-")[0]}`
+    `${API_URL}/api/categories/single/${slug}?lang=${i18n.language.split("-")[0]}`
     )
       .then((res) => {
         if (!res.ok) throw new Error(t("categoryPage.notFound"));

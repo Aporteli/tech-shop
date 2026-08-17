@@ -2,9 +2,9 @@ import { createContext, useContext, useState, useEffect, useRef } from 'react';
 import { useAuth } from './AuthContext';
 import { useTranslation } from 'react-i18next';
 import { toast } from 'react-toastify';
+import { API_URL as BASE_URL } from '../api/apiBase';
 
 const CompareContext = createContext();
-const BASE_URL = 'http://localhost:5001';
 
 export const useCompare = () => {
   const context = useContext(CompareContext);

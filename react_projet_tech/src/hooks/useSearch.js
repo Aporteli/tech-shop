@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { API_URL } from '../api/apiBase';
 
 export const useSearch = navigate => {
   const { t, i18n } = useTranslation();
@@ -24,7 +25,7 @@ export const useSearch = navigate => {
       try {
         const lang = i18n.language.split('-')[0];
         const response = await fetch(
-          `http://localhost:5001/api/search?q=${encodeURIComponent(searchQuery)}&lang=${lang}`
+          `${API_URL}/api/search?q=${encodeURIComponent(searchQuery)}&lang=${lang}`
         );
         const data = await response.json();
    

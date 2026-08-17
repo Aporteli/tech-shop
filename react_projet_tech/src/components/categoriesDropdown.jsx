@@ -25,6 +25,7 @@ import { FaServicestack } from "react-icons/fa6";
 
 import SubCategories from "./subCategories";
 import { useTranslation } from "react-i18next";
+import { API_URL } from "../api/apiBase";
 
 // 1. ვქმნით მუდმივ მასივს კონფიგურაციისთვის
 const CATEGORIES_CONFIG = [
@@ -102,7 +103,7 @@ function CategoriesDropdown() {
 
   useEffect(() => {
     // შენი ბექენდის მისამართი
-    fetch("http://localhost:5001/api/categories/main-categories")
+    fetch(`${API_URL}/api/categories/main-categories`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);

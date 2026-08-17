@@ -11,8 +11,7 @@ import { useTranslation } from 'react-i18next';
 import { useModal } from '../../hooks/useModal';
 import SimilarProductsSlider from '../../components/similarProductsSlider/similarProductsSlider';
 import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
-
-const BASE_URL = 'http://localhost:5001';
+import { API_URL as BASE_URL } from '../../api/apiBase';
 
 export default function SingleProduct() {
   const { i18n, t } = useTranslation();

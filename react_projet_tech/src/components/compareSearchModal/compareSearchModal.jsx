@@ -4,8 +4,7 @@ import styles from './compareSearchModal.module.css';
 import { useTranslation } from 'react-i18next';
 import { useModal } from '../../hooks/useModal';
 import OptimizedImage from '../OptimizedImage/OptimizedImage';
-
-const BASE_URL = 'http://localhost:5001';
+import { API_URL as BASE_URL } from '../../api/apiBase';
 const MIN_QUERY_LENGTH = 2;
 
 export default function CompareSearchModal({ isOpen, onClose, onProductSelect, currentCategory }) {

@@ -1,4 +1,6 @@
-const BASE_URL = 'http://localhost:5001/api';
+import { API_URL } from './apiBase';
+
+const BASE_URL = `${API_URL}/api`;
 
 export async function handleRegister(formData) {
   try {

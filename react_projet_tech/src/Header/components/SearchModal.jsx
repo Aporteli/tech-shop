@@ -6,6 +6,7 @@ import { IoIosSearch } from 'react-icons/io';
 import { FaX } from 'react-icons/fa6';
 import styles from '../Header.module.css';
 import OptimizedImage from '../../components/OptimizedImage/OptimizedImage';
+import { API_URL } from '../../api/apiBase';
 
 export default function SearchModal({
   openModal,
@@ -64,7 +65,7 @@ export default function SearchModal({
       try {
         const lang = i18n.language.split('-')[0];
         const response = await fetch(
-          `http://localhost:5001/api/search?q=${encodeURIComponent(searchQuery)}&lang=${lang}&category=${encodeURIComponent(selectedCategory)}&limit=500`,
+          `${API_URL}/api/search?q=${encodeURIComponent(searchQuery)}&lang=${lang}&category=${encodeURIComponent(selectedCategory)}&limit=500`,
           { signal: controller.signal }
         );
         const data = await response.json();

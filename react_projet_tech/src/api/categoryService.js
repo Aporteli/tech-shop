@@ -1,6 +1,7 @@
 import i18n from '../i18n';
+import { API_URL } from './apiBase';
 
-const BASE_URL = 'http://localhost:5001/api';
+const BASE_URL = `${API_URL}/api`;
 
 function humanizeSlug(slug) {
   return slug
